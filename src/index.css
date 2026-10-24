@@ -1,0 +1,113 @@
+:root {
+  /* Swiss Daylight Studio Palette */
+  --bg-canvas: #faf9f6;
+  --bg-elevated: #ffffff;
+  --bg-stone: #f3f1ec;
+  --bg-stone-hover: #ebe8e0;
+  --bg-glass: rgba(255, 255, 255, 0.86);
+  --bg-obsidian: #0b0f19;
+
+  /* Borders & Hairlines */
+  --border-light: #e5e2dc;
+  --border-strong: #d0ccc2;
+  --border-cobalt: rgba(37, 99, 235, 0.28);
+  --border-emerald: rgba(5, 150, 105, 0.3);
+
+  /* High-Contrast Daylight Typography */
+  --text-obsidian: #0b0f19;
+  --text-slate: #334155;
+  --text-muted: #64748b;
+
+  /* Commercial Brand Accents */
+  --cobalt: #2563eb;
+  --cobalt-dark: #1d4ed8;
+  --cobalt-soft: rgba(37, 99, 235, 0.08);
+  --emerald: #059669;
+  --emerald-dark: #047857;
+  --emerald-soft: rgba(5, 150, 105, 0.09);
+  --crimson: #e11d48;
+  --crimson-soft: rgba(225, 29, 72, 0.08);
+  --indigo: #4f46e5;
+
+  /* Multi-layered Tactile Daylight Shadows */
+  --shadow-xs: 0 2px 8px -2px rgba(11, 15, 25, 0.05);
+  --shadow-card: 0 12px 32px -8px rgba(11, 15, 25, 0.06), 0 4px 12px -3px rgba(11, 15, 25, 0.04);
+  --shadow-float: 0 24px 60px -15px rgba(11, 15, 25, 0.11), 0 8px 24px -6px rgba(37, 99, 235, 0.06);
+  --shadow-emerald: 0 12px 30px -6px rgba(5, 150, 105, 0.22);
+  --shadow-cobalt: 0 14px 34px -6px rgba(37, 99, 235, 0.25);
+
+  /* Font Families */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-canvas);
+  color: var(--text-obsidian);
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-obsidian);
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: radial-gradient(rgba(11, 15, 25, 0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--cobalt);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
